@@ -1,9 +1,19 @@
 import { StyledLogin } from "./styled";
 
+
+
+import logo from '../../assets/1.png'
+
 export default function Login() {
     return (
         <StyledLogin>
             <div id="container">
+
+            <img src={logo} alt="" />
+
+          
+
+
                 <form>
 
                     <div className="inputBox">

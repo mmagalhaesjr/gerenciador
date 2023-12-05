@@ -27,10 +27,10 @@ const GlobalStyle = createGlobalStyle`
        
     }
     body{
-    /* background-image: ${fotoCaminho};
+    background-image:${fotoCaminho} ;
     background-repeat:no-repeat ;
     background-size: 100%;
-    background-position: center;  */
+    background-position: center; 
     }
     html{
     scroll-behavior: smooth;

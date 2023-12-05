@@ -1,9 +1,14 @@
 import { StyledCadastro } from "./styled";
 
+import logo from '../../assets/1.png'
+
 export default function Cadastro() {
     return (
         <StyledCadastro>
             <div id="container">
+
+            <img src={logo} alt="logo" />
+
                 <form>
 
                 <div className="inputBox">

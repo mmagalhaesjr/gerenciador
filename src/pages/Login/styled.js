@@ -17,8 +17,14 @@ justify-content: center;
     background: radial-gradient(circle, rgba(37,112,204,1) 0%, rgba(47,65,108,1) 100%);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+img{
+    width: 300px;
+    margin-bottom: 5%;
 }
 
 form{

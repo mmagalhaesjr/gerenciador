@@ -1,8 +1,8 @@
-import MinhasTarefas from "../../components/MinhasTarefas/MinhasTarefas";
 import { StyledInicial } from "./styled";
 
 import { CiCirclePlus } from "react-icons/ci";
 import { RiSearchEyeLine } from "react-icons/ri";
+import Tarefas from "../../components/Tarefas/Tarefas";
 
 export default function Inicial() {
     return (
@@ -10,7 +10,12 @@ export default function Inicial() {
             <div id="container">
 
                 <div id="tarefas">
-                    <MinhasTarefas />
+                    <Tarefas />
+                    <Tarefas />
+                    <Tarefas />
+                    <Tarefas />
+                    <Tarefas />
+                    <Tarefas />
                 </div>
 
                 <div id="cx">

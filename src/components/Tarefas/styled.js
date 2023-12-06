@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
 
-export const StyledMinhasTarefas = styled.section`
-
-height: 100vh;
-
+export const StyledTarefas = styled.section`
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
+
 
 #tarefa{
     width: 98%;
@@ -23,6 +22,8 @@ justify-content: center;
     justify-content: center;
     gap: 7%;
     color: #ffffff;
+
+   
 }
 #nomeTarefa{
     width: 50%;

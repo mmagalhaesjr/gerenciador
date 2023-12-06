@@ -1,12 +1,12 @@
-import { StyledMinhasTarefas } from "./styled";
+import { StyledTarefas } from "./styled";
 
 
 import { CiTrash } from "react-icons/ci";
 import { CiCircleCheck } from "react-icons/ci";
 
-export default function MinhasTarefas() {
+export default function Tarefas() {
     return (
-        <StyledMinhasTarefas>
+        <StyledTarefas>
 
             <div id="tarefa">
                 <CiCircleCheck />
@@ -18,6 +18,6 @@ export default function MinhasTarefas() {
 
             </div>
 
-        </StyledMinhasTarefas>
+        </StyledTarefas>
     )
 }

@@ -8,7 +8,7 @@ export default function Tarefas() {
             <div id="container">
 
 
-            <MinhasTarefas />
+            <MinhasTarefas/>
 
             </div>
         </StyledTarefas>

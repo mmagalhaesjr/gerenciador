@@ -9,12 +9,12 @@ export default function Tarefas(prop) {
         <StyledTarefas>
 
             <div id="tarefa">
-                <CiCircleCheck />
+                <CiCircleCheck id="check" />
                 <div id="nomeTarefa">
-                    <h2>{prop.tarefa}</h2>
+                    <h2>{prop.descricao}</h2>
                 </div>
-                <p>{prop.nome}</p>
-                <CiTrash />
+                <p>marcos</p>
+                <CiTrash id="lixo" />
 
             </div>
 

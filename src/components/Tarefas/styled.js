@@ -40,4 +40,12 @@ font-size: 1rem;
 #tarefa p{
 font-size:.7rem;
 }
+#check:hover{
+    color: rgb(238,97,16);
+    cursor: pointer;
+}
+#lixo:hover{
+    color: rgb(238,97,16);
+    cursor: pointer;
+}
 `

@@ -19,6 +19,7 @@ export default function Inicial() {
     const [tarefa, setTarefa] = useState(listaMinhasTarefas)
 
 
+
     function addTarefas() {
 
         const novaTarefa = prompt('Nova tarefa:')
@@ -34,7 +35,9 @@ export default function Inicial() {
             <div id="container">
 
                 <div id="tarefas">
-                    {tarefa.map((tarefa) => <Tarefas descricao={tarefa}  key={tarefa.id} />)}
+                    {tarefa.map((tarefa) =>  <Tarefas descricao={tarefa}  key={tarefa.id} />
+                    
+                    )}
                 </div>
 
                 <div id="cx">

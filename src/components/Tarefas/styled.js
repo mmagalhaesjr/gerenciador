@@ -13,8 +13,8 @@ justify-content: center;
     height:60px;
     margin-bottom: 3%;
     border-radius: 50px;
-    background: rgb(162,171,180);
-    background: radial-gradient(circle, rgba(162,171,180,0.29315476190476186) 0%, rgba(200,204,224,0.27074579831932777) 100%);
+   
+    background: ${(props) => (props.concluida ? '#08f41ca5' : 'radial-gradient(circle, rgba(162,171,180,0.29315476190476186) 0%, rgba(200,204,224,0.27074579831932777) 100%)')};
 
     display: flex;
    

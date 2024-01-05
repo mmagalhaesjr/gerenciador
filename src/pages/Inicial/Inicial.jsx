@@ -23,11 +23,13 @@ export default function Inicial() {
         const novaListaMinhasTarefas = [...tarefa, novaTarefa]
         setTarefa(novaListaMinhasTarefas)
     }
+
     function deleteTarefa(index) {
         const novaListaMinhasTarefas = [...tarefa];
         novaListaMinhasTarefas.splice(index, 1);
         setTarefa(novaListaMinhasTarefas);
     }
+  
 
     return (
         <StyledInicial>

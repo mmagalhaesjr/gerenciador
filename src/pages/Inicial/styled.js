@@ -18,14 +18,17 @@ justify-content: center;
     background: radial-gradient(circle, rgba(37,112,204,1) 0%, rgba(47,65,108,1) 100%);
    
 }
-#tarefas{
+#minhasTarefas{
     width: 100%;
-    height: 80%;
+    height: 90%;
     border-bottom: 2px solid rgba(162, 171, 180, 0.384);
     overflow: auto;
-    z-index: 1;  
+    z-index: 1; 
 
-   
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 #abelha{
     width: 100%;
@@ -36,11 +39,12 @@ justify-content: center;
 }
 
 #cxBotoes{
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: 1;   
+    z-index: 1;  
 }
 #texto{
     margin-top: 3%;
@@ -69,41 +73,6 @@ button:hover{
     cursor: pointer;
 }
 
-
-
-
-//tarefas------------------------
-#tarefa{
-    width: 98%;
-    height:60px;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    border-radius: 50px;
-    background: rgb(162,171,180);
-    background: radial-gradient(circle, rgba(162,171,180,0.29315476190476186) 0%, rgba(200,204,224,0.27074579831932777) 100%);
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7%;
-    color: #ffffff;
-}
-#nomeTarefa{
-    width: 50%;
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-}
-#tarefa h2{
-font-size: 1rem;
-}
-#tarefa p{
-font-size:.7rem;
-}
 #check:hover{
     color: rgb(238,97,16);
     cursor: pointer;

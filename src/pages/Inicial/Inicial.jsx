@@ -39,7 +39,7 @@ export default function Inicial() {
 
                 <img id="abelha" src={abelha} alt="foto" />
 
-                <div id="tarefas">
+                <div id="minhasTarefas">
                     {tarefa.map((t,index) =>  <Tarefas 
                      descricao={t}
                      key={index}

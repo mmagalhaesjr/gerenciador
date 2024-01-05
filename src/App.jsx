@@ -15,7 +15,7 @@ function App() {
         {/* <Route path="/" exact element={<Login />} />
           <Route path="/cadastro" exact element={<Cadastro />} /> */}
           
-          <Route path="/inicial" exact element={<Inicial />} />
+          <Route path="/" exact element={<Inicial />} />
           
          
          

@@ -101,4 +101,10 @@ font-size:.7rem;
     color: rgb(238,97,16);
     cursor: pointer;
 }
+
+@media(max-width:600px){
+    #container{
+        border-radius: 0px;
+    }
+}
 `

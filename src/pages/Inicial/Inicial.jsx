@@ -7,19 +7,26 @@ import { useState } from "react";
 
 
 const listaMinhasTarefas = [
-    'fazer landing pages',
-    'foto zé das flores',
-    'criar blog16'
+    
 ]
 
 export default function Inicial() {
     const [tarefa, setTarefa] = useState(listaMinhasTarefas)
 
     function addTarefas() {
-
         const novaTarefa = prompt('Nova tarefa:')
+        
+        if (novaTarefa === '' || novaTarefa === null) {
+            alert('Digite uma tarefa.');
+            return; 
+        }
         const novaListaMinhasTarefas = [...tarefa, novaTarefa]
         setTarefa(novaListaMinhasTarefas)
+    }
+    function deleteTarefa(index) {
+        const novaListaMinhasTarefas = [...tarefa];
+        novaListaMinhasTarefas.splice(index, 1);
+        setTarefa(novaListaMinhasTarefas);
     }
 
     return (
@@ -27,7 +34,11 @@ export default function Inicial() {
             <div id="container">
 
                 <div id="tarefas">
-                    {tarefa.map((t) =>  <Tarefas descricao={t}  key={t.id} />
+                    {tarefa.map((t,index) =>  <Tarefas 
+                     descricao={t}
+                     key={index}
+                     onDelete={() => deleteTarefa(index)}
+                    />
                     
                     )}
                 </div>
@@ -47,3 +58,4 @@ export default function Inicial() {
         </StyledInicial>
     )
 }
+

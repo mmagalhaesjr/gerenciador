@@ -14,8 +14,7 @@ export default function Tarefas(prop) {
                     <h2>{prop.descricao}</h2>
                 </div>
                 <p>marcos</p>
-                <CiTrash id="lixo" />
-
+                <CiTrash id="lixo" onClick={prop.onDelete} />
             </div>
 
         </StyledTarefas>

@@ -22,6 +22,7 @@ justify-content: center;
     justify-content: center;
     gap: 7%;
     color: ${(prop) => (prop.concluida ? 'black' : 'white')};
+    z-index: 3;
     
 }
 #nomeTarefa{
@@ -41,6 +42,7 @@ font-size:.7rem;
 }
 #check,#lixo{
     font-size: 1.5rem;
+    z-index: 3;
 }
 #check:hover{
     color: rgb(238,97,16);

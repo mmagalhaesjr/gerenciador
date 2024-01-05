@@ -5,6 +5,8 @@ import { RiSearchEyeLine } from "react-icons/ri";
 import Tarefas from "../../components/Tarefas/Tarefas";
 import { useState } from "react";
 
+import abelha from '../../assets/abelha-fundo.png'
+
 
 const listaMinhasTarefas = [
     
@@ -35,6 +37,8 @@ export default function Inicial() {
         <StyledInicial>
             <div id="container">
 
+                <img id="abelha" src={abelha} alt="foto" />
+
                 <div id="tarefas">
                     {tarefa.map((t,index) =>  <Tarefas 
                      descricao={t}
@@ -45,13 +49,13 @@ export default function Inicial() {
                     )}
                 </div>
 
-                <div id="cx">
+                <div id="cxBotoes">
 
                     {/* <textarea id="texto" className="imputMesnsagem" name="msg" rows="2" cols="50"></textarea> */}
 
                     <div id="botoes">
-                        <button onClick={addTarefas} >  <CiCirclePlus />  NOVA TAREFA</button>
-                        <button> <RiSearchEyeLine /> VER TODAS AS TAREFAS</button>
+                        <button onClick={addTarefas} >  <CiCirclePlus /> <p>NOVA TAREFA</p></button>
+                        <button> <RiSearchEyeLine /> <p>VER TODAS AS TAREFAS</p></button>
                     </div>
 
                 </div>

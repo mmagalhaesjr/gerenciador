@@ -10,6 +10,7 @@ align-items: center;
 justify-content: center;
 
 #container{
+    position: relative;
     width:500px;
     height: 100%;
     border-radius:20px;
@@ -22,17 +23,24 @@ justify-content: center;
     height: 80%;
     border-bottom: 2px solid rgba(162, 171, 180, 0.384);
     overflow: auto;
+    z-index: 1;  
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
+}
+#abelha{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    z-index: 0;
 }
 
-#cx{
+#cxBotoes{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 1;   
 }
 #texto{
     margin-top: 3%;
@@ -51,6 +59,10 @@ button{
     background-color: transparent;
     border: none;
     color: #ffffff;
+
+    display: flex;
+
+    font-size: 1.1rem;
 }
 button:hover{
     color: rgb(238,97,16);
@@ -65,18 +77,17 @@ button:hover{
     width: 98%;
     height:60px;
     margin-bottom: 3%;
+    margin-top: 3%;
     border-radius: 50px;
     background: rgb(162,171,180);
     background: radial-gradient(circle, rgba(162,171,180,0.29315476190476186) 0%, rgba(200,204,224,0.27074579831932777) 100%);
+    z-index: 2;
 
     display: flex;
-   
     align-items: center;
     justify-content: center;
     gap: 7%;
     color: #ffffff;
-
-   
 }
 #nomeTarefa{
     width: 50%;

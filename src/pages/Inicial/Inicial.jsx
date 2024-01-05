@@ -6,36 +6,28 @@ import Tarefas from "../../components/Tarefas/Tarefas";
 import { useState } from "react";
 
 
-
+const listaMinhasTarefas = [
+    'fazer landing pages',
+    'foto zé das flores',
+    'criar blog16'
+]
 
 export default function Inicial() {
-
-    const listaMinhasTarefas = [
-        'fazer landing pages',
-        'foto zé das flores',
-        'criar blog16'
-    ]
-
     const [tarefa, setTarefa] = useState(listaMinhasTarefas)
-
-
 
     function addTarefas() {
 
         const novaTarefa = prompt('Nova tarefa:')
         const novaListaMinhasTarefas = [...tarefa, novaTarefa]
         setTarefa(novaListaMinhasTarefas)
-
-
     }
 
     return (
         <StyledInicial>
-            {console.log(listaMinhasTarefas)}
             <div id="container">
 
                 <div id="tarefas">
-                    {tarefa.map((tarefa) =>  <Tarefas descricao={tarefa}  key={tarefa.id} />
+                    {tarefa.map((t) =>  <Tarefas descricao={t}  key={t.id} />
                     
                     )}
                 </div>

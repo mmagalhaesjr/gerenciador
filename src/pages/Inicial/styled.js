@@ -10,18 +10,18 @@ align-items: center;
 justify-content: center;
 
 #container{
-    position: relative;
-    overflow: hidden;
+    
     width:500px;
     height: 100%;
     border-radius:20px;
     background: rgb(37,112,204);
     background: radial-gradient(circle, rgba(37,112,204,1) 0%, rgba(47,65,108,1) 100%);
-   
+    position: relative;
+    overflow: hidden;
 }
 #minhasTarefas{
     width: 100%;
-    height: 90%;
+    height: 80%;
     border-bottom: 2px solid rgba(162, 171, 180, 0.384);
     overflow: auto;
     z-index: 1; 
@@ -45,6 +45,7 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     z-index: 1;  
+
 }
 #texto{
     margin-top: 3%;

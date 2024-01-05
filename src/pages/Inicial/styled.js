@@ -11,6 +11,7 @@ justify-content: center;
 
 #container{
     position: relative;
+    overflow: hidden;
     width:500px;
     height: 100%;
     border-radius:20px;
@@ -41,7 +42,6 @@ justify-content: center;
 #cxBotoes{
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;  
@@ -57,7 +57,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20%;
+    gap: 10%;
 }
 button{
     background-color: transparent;
